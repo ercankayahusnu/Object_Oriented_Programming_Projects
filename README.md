@@ -1,2 +1,2 @@
-# Object-_Oriented-_Programming-_Projects
+# Object_Oriented_Programming_Projects
 Object Oriented Programming Projects in Java
