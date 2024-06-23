@@ -1,4 +1,4 @@
-package ProjectOne;
+package StudentInformationSystemProject;
 
 public class Teacher {
     String name;

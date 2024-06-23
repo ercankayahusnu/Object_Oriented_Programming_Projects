@@ -1,4 +1,4 @@
-package ProjectOne;
+package StudentInformationSystemProject;
 
 public class Student {
     Course course1;
@@ -17,19 +17,21 @@ public class Student {
         this.course1 = course1;
         this.course2 = course2;
         this.course3 = course3;
-        avarage = 0.0;
+        this.avarage = 0.0;
         isPass = false;
     }
 
     public void addBullExamNote(int note1, int note2, int note3) {
         if (note1 >= 0 && note1 <= 100) {
             this.course1.note = note1;
+
         }
 
         if (note2 >= 0 && note2 <= 100) {
             this.course2.note = note2;
+
         }
-        if (note3 >= 0 && note3 <= 100) {
+        if ((note3 >= 0 && note3 <= 100)) {
             this.course3.note = note3;
         }
 

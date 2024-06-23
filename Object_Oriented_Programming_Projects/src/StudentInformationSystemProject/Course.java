@@ -1,4 +1,4 @@
-package ProjectOne;
+package StudentInformationSystemProject;
 
 public class Course {
     Teacher teacher;
@@ -6,6 +6,7 @@ public class Course {
     String code;
     String prefix;
     int note;
+    int verbalNote =20;
 
     public Course(String name, String code, String prefix) {
         this.name = name;
