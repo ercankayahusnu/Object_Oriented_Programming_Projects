@@ -14,16 +14,16 @@ public class Main {
         Course Kimya = new Course("Kimya", "103", "KMY");
         Kimya.addTeacher(teacher3);
 
-        Student student1 = new Student("Hüsnü", "6048", "4", Tarih, Beden, Kimya);
-        student1.addBullExamNote(50, 90, 70);
+        Student student1 = new Student("Ecem", "6048", "4", Tarih, Beden, Kimya);
+        student1.addBullExamNote(50, 90, 70,20,30,100);
         student1.isPass();
 
         Student student2 = new Student("Ayşe", "5901", "3", Tarih, Beden, Kimya);
-        student2.addBullExamNote(20, 90, 35);
+        student2.addBullExamNote(20, 90, 35,70,50,15);
         student2.isPass();
 
         Student student3 = new Student("Ali", "5871", "2", Tarih, Beden, Kimya);
-        student3.addBullExamNote(50, 65, 28);
+        student3.addBullExamNote(50, 65, 28,25,60,45);
         student3.isPass();
 
     }
