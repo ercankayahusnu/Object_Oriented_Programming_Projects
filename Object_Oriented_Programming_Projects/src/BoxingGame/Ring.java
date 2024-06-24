@@ -14,26 +14,30 @@ public class Ring {
     }
 
     public void run() {
-
         if (checkWeight()) {
+
+            boolean isFirstFighterStarts = Math.random() <= 0.5;
+
             while (f1.health > 0 && f2.health > 0) {
                 System.out.println("======== YENİ ROUND ===========");
-                f2.health = f1.hit(f2);
+                if (isFirstFighterStarts) {
+                    f2.health = f1.hit(f2);
+                    isFirstFighterStarts = false;
+                } else {
+                    f1.health = f2.hit(f1);
+                    isFirstFighterStarts = true;
+                }
+
                 if (isWin()) {
                     break;
                 }
-                f1.health = f2.hit(f1);
-                if (isWin()) {
-                    break;
-                }
+
                 printScore();
             }
 
         } else {
             System.out.println("Sporcuların ağırlıkları uyuşmuyor.");
         }
-
-
     }
 
     public boolean checkWeight() {
